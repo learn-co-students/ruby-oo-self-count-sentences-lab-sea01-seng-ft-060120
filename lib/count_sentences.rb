@@ -1,24 +1,5 @@
 require 'pry'
-class Song
 
-  @@all = []
-
-  attr_accessor :name
-
-  def initialize(name)
-    @name= name
-    @@all << self
-  end
-
-  def self.all
-    @@all
-  end
-
-  def print_all_song_names
-    binding.pry
-    print @@all
-  end
-end
 class String
 
   def sentence?
